@@ -1,0 +1,181 @@
+body.light {
+    color: $body;
+    background-color: $bodyLight;
+
+    // Header
+    .header {
+        background-color: $bodyLight;
+        border-bottom: 1px solid $borderLight;
+
+        &__brand {
+            a {
+                color: $body;
+            }
+        }
+
+        &__logout {
+            background-color: darken($bodyLight, 5%);
+        }
+    }
+
+    .login,
+    .register {
+        &__container {
+            background-color: darken($bodyLight, 5%);
+        }
+
+        &-form {
+            input {
+                background-color: $bodyLight !important;
+                color: $body;
+            }
+        }
+    }
+
+    .btn-logout {
+        color: $body;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    // Searchbar
+    .searchbar {
+        border: 1px solid $borderLight;
+
+        input {
+            color: $body;
+        }
+    }
+
+    // Note
+    .note {
+        &-input {
+            &__body {
+                color: rgba($color: $body, $alpha: 0.75);
+            }
+        }
+        &__navigation {
+            nav {
+                background-color: darken($bodyLight, 5%);
+
+                ul {
+                    li {
+                        a {
+                            color: $body;
+
+                            &.active {
+                                color: $bodyLight;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-detail {
+            p {
+                color: rgba($color: $body, $alpha: 0.75);
+            }
+            ol,
+            ul,
+            li {
+                color: rgba($color: $body, $alpha: 0.75) !important;
+            }
+        }
+
+        &-item {
+            border: 1px solid $borderLight;
+            border-top: 5px solid $grey;
+
+            &__title {
+                color: $body;
+            }
+
+            &__content {
+                color: rgba($color: $body, $alpha: 0.75);
+            }
+
+            &:hover {
+                background-color: darken($color: $bodyLight, $amount: 5%);
+                border: 1px solid $grey;
+            }
+        }
+    }
+
+    // Footer
+    .footer {
+        border-top: 1px solid $borderLight;
+
+        p {
+            color: $body;
+        }
+    }
+
+    .btn-link {
+        color: $body;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    .btn-theme {
+        svg {
+            color: $body;
+        }
+    }
+
+    .swal2-popup,
+    .swal2-success-circular-line-right,
+    .swal2-success-circular-line-left,
+    .swal2-success-fix {
+        background: lighten($color: $bodyLight, $amount: 5%) !important;
+        color: $body !important;
+    }
+
+    // Jodit Editor
+
+    .jodit {
+        &-status-bar {
+            background-color: $bodyLight;
+            color: $body;
+        }
+
+        &-status-bar-link {
+            color: $body !important;
+        }
+
+        &-icon {
+            fill: $body;
+        }
+
+        &-toolbar__box:not(:empty):not(:empty) {
+            background-color: $bodyLight;
+            color: $body !important;
+        }
+
+        &-wysiwyg {
+            background-color: $bodyLight;
+
+            ol,
+            li {
+                color: $secondaryText;
+            }
+            p {
+                margin-top: 0;
+            }
+        }
+
+        &-popup__content {
+            background-color: $bodyLight;
+            color: $body;
+        }
+        &-ui-button__text {
+            color: $body;
+            font-weight: 600;
+        }
+    }
+}
